@@ -1,7 +1,7 @@
 def add_vectors(v: list[float], w: list[float])-> list[float]:
     return [vi + wi for vi, wi in zip(v,w)]
 
-def substract_vectors(v: list[float], w: list[float])-> list[float]:
+def subtract_vectors(v: list[float], w: list[float])-> list[float]:
     return [vi - wi for vi, wi in zip(v,w)]
 
 def dot_product_vectors(v: list[float], w: list[float])-> list[float]:
