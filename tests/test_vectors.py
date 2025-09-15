@@ -12,11 +12,11 @@ def test_add_vectors():
     result = add_vectors(v, w)
     assert result == [5.0,7.0,9.0]
 
-def test_substract_vectors():
-    """Substract two vectors element-wise"""
+def test_subtract_vectors():
+    """Subtract two vectors element-wise"""
     v = [1.0,2.0,3.0]
     w = [4.0,5.0,6.0]
-    result = substract_vectors(v, w)
+    result = subtract_vectors(v, w)
     assert result == [-3.0,-3.0,-3.0]
 
 def test_dot_product_vectors():

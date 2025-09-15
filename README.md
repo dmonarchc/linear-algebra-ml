@@ -16,7 +16,7 @@ linear-algebra-ml/
 ├─ scripts/       # CLI scripts to run pipelines
 ├─ tests/         # unit and integration tests
 └─ src/
-   └─ linalgml/   # main package
+   └─ la_ml/   # main package
       ├─ core/        # pure math: vectors, matrices, stats, decomposition
       ├─ pca/         # PCA algorithm built on top of core
       ├─ adapters/    # I/O, NumPy/Sklearn bridges, visualization
@@ -44,8 +44,8 @@ linear-algebra-ml/
 
 ## 🚀 Roadmap
 
-- [ ] **Stage 0**: Project setup (environment, repo, initial docs).  
-- [ ] **Stage 1**: Vector operations (sum, dot, norm, scaling).  
+- [x] **Stage 0**: Project setup (environment, repo, initial docs).  
+- [x] **Stage 1**: Vector operations (sum, dot, norm, scaling).  
 - [ ] **Stage 2**: Matrix operations (transpose, multiplication, shape validation).  
 - [ ] **Stage 3**: Advanced ops (determinant, inverse, eigenvalues/vectors).  
 - [ ] **Stage 4**: Data preprocessing (centering, covariance matrix).  
