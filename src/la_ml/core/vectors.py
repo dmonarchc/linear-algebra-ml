@@ -1,11 +1,22 @@
 def add_vectors(v: list[float], w: list[float])-> list[float]:
+    if len(v) != len(w):
+        raise ValueError("Vectors must be equal size")
     return [vi + wi for vi, wi in zip(v,w)]
 
 def subtract_vectors(v: list[float], w: list[float])-> list[float]:
+    if len(v) != len(w):
+        raise ValueError("Vectors must be equal size")
     return [vi - wi for vi, wi in zip(v,w)]
 
 def dot_product_vectors(v: list[float], w: list[float])-> list[float]:
+    if len(v) != len(w):
+        raise ValueError("Vectors must be equal size")
     return sum([vi * wi for vi, wi in zip(v,w)])
+
+def hadamard(v: list[float], w: list[float])-> list[float]:
+    if len(v) != len(w):
+        raise ValueError("Vectors must be equal size")
+    return [vi * wi for vi, wi in zip(v,w)]
 
 def euclidean_norm_vector(v: list[float])-> list[float]:
     return (sum(vi**2.0 for vi in v))**0.5
